@@ -13,3 +13,11 @@ custom_paragraph.settings_form:
     _form: 'Drupal\custom_paragraph\Form\SettingsForm'
   requirements:
     _permission: 'administer custom_paragraph configuration'
+
+custom_paragraph.settings:
+    path: '/custom-paragraph/example'
+    defaults:
+        _title: 'Example'
+        _controller: '\Drupal\custom_paragraph\Controller\CustomParagraphController::build'
+    requirements:
+        _permission: 'access content'
